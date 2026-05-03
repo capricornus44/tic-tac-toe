@@ -1,5 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ThemeToggle from "./components/ThemeToggle.vue";
+</script>
 
 <template>
-  <main class="text-red-500 text-4xl">Tic Tac Toe</main>
+  <header class="header"><ThemeToggle /></header>
+  <main class="text-red-500 text-4xl"></main>
 </template>

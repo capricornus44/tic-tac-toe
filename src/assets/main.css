@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,7 +9,9 @@
 }
 
 body {
-  display: grid;
-  place-content: center;
-  height: 100vh;
+  @apply relative bg-zinc-100 dark:bg-gray-950 text-zinc-900 dark:text-zinc-100 transition-colors;
+}
+
+.header {
+  @apply sticky top-0 left-0 right-0 px-4 h-16 flex items-center justify-end;
 }
