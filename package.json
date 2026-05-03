@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@lucide/vue": "^1.14.0",
+    "pinia": "^3.0.4",
     "vue": "beta"
   },
   "devDependencies": {

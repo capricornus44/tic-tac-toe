@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -14,4 +14,8 @@ body {
 
 .header {
   @apply sticky top-0 left-0 right-0 px-4 h-16 flex items-center justify-end;
+}
+
+.btn {
+  @apply w-fit border border-violet-600 dark:border-violet-400 py-2 px-4 rounded-xl font-medium transition-all cursor-pointer;
 }
